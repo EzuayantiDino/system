@@ -1,0 +1,287 @@
+@font-face {
+  font-family: RubikLight;
+  src: url("fonts/Rubik-Light.woff") format('woff');
+}
+
+@font-face {
+  font-family: RubikMedium;
+  src: url("fonts/Rubik-Medium.woff") format('woff');
+}
+
+@font-face {
+  font-family: RubikBold;
+  src: url("fonts/Rubik-Bold.woff") format('woff');
+}
+
+@font-face {
+  font-family: RubikBlack;
+  src: url("fonts/Rubik-Black.woff") format('woff');
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("fonts/Rubik-Regular.woff") format('woff');
+}
+
+
+/* Italic Font*/
+
+@font-face {
+  font-family: Rubik;
+  src: url("fonts/Rubik-Italic.woff") format('woff');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: RubikLight;
+  src: url("fonts/Rubik-LightItalic.woff") format('woff');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: RubikMedium;
+  src: url("fonts/Rubik-MediumItalic.woff") format('woff');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: RubikBold;
+  src: url("fonts/Rubik-BoldItalic.woff") format('woff');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: RubikBlack;
+  src: url("fonts/Rubik-BlackItalic.woff") format('woff');
+  font-style: italic;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+}
+
+#divMain {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+#divBottom {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.navbar {
+  top: 0;
+  overflow: hidden;
+  background-color: #fec5bb;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar_btn:hover, .dropdown:hover .dropbtn {
+  color: black;
+  background-color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.table1 {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+      
+.table1 > tbody > tr > th {
+  background: #d8e2dc;
+  padding: 10px;
+  text-align: center;
+}
+      
+.table1 > tbody > tr > td {
+  padding: 10px;
+  text-align: center;
+  border-top: 1px solid lightgray;
+}
+      
+.table1 > tbody > tr > th:first-child {
+  border-radius: 10px 0px 0px 0px;
+}
+      
+.table1 > tbody > tr > th:last-child {
+  border-radius: 0px 10px 0px 0px;
+}
+      
+.table1 > tbody > tr:last-child > td:first-child {
+  border-radius: 0px 0px 0px 10px;
+}
+      
+.table1 > tbody > tr:last-child > td:last-child {
+  border-radius: 0px 0px 10px 0px;
+}
+      
+.table1 > tbody > tr:not(:first-child):hover {
+  background: #f0f0f0;
+}
+      
+button {
+  color: white;
+  background-color: dodgerblue;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: Arial;
+  padding: 6px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.icon_cart {
+  color: rgba(0, 0, 0, 0);
+  background-color: black;
+  mask: url(resources/icons/cart.svg) no-repeat center;
+}
+.icon_cart:hover {
+  background-color: black;
+}
+
+.icon_login {
+  color: rgba(0, 0, 0, 0);
+  background-color: black;
+  mask: url(resources/icons/login.svg) no-repeat center;
+}
+.icon_login:hover {
+  background-color: black;
+}
+
+.inputbox {
+  display: block;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.labelinputbox {
+  display: block;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.overlay {
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); 
+  z-index: 2;
+}
+
+.overlay-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.btn-cancel {
+  color: black;
+  background: lightgray;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+#divFooter {
+  display: flex;
+  gap: 20px;
+  padding: 20px 50px;
+  color: white;
+  background: #2c292f;
+}
+
+.divFooter_a {
+  text-decoration: none;
+  color: white;
+}
+
+.divFooter_btn_icon {
+  display: inline-block;
+  background: white;
+  height: 25px;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.divFooter_icon {
+  width: 25px;
+}
